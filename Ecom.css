@@ -1,0 +1,123 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh; /* Ensure body covers the entire viewport height */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack flex items vertically */
+    min-height: 100%;
+}
+
+img{
+    width: 300px;
+    height: auto;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+        background-image: url("bg/demo.gif");
+        background-size: 100%;
+
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+   }
+
+/* Product cards */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: calc(33.33% - 20px); /* Adjust width for 3 products on one line */
+    margin-right: 20px; /* Add right margin for spacing between products */
+    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: top; /* Align products to the top of the line */
+    box-sizing: border-box;
+    opacity: 80%;
+}
+
+.product-card:nth-child(3n) {
+    margin-right: 0; /* Remove right margin for every third product to prevent wrapping */
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    opacity: 100%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card ul {
+    list-style-type: none; /* Remove bullets from the specifications list */
+    padding: 0; /* Remove default padding */
+}
+
+.product-card ul li {
+    margin-bottom: 5px; /* Add margin between specification items */
+}
+
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+#pageNumbers {
+    margin: 0 10px;
+}
